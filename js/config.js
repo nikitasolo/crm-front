@@ -1,6 +1,13 @@
 function config($stateProvider, $urlRouterProvider) {
-    $urlRouterProvider.otherwise("/index");
+    $urlRouterProvider.otherwise("/buildings");
     $stateProvider
+        .state('login', {
+            url: "/login",
+            templateUrl: "views/sign-in.html",
+            data: {
+                pageTitle: 'login'
+            }
+        })
         .state('index', {
             url: "/index",
             templateUrl: "views/index.html",
@@ -8,30 +15,25 @@ function config($stateProvider, $urlRouterProvider) {
                 pageTitle: 'index'
             }
         })
-        .state('ui', {
-            abstract: true,
-            url: "/ui",
-            templateUrl: "views/common.html",
-        })
-        .state('ui.buttons', {
-            url: "/buttons",
-            templateUrl: "views/ui-buttons.html",
+        .state('buildings', {
+            url: "/buildings",
+            templateUrl: "views/buildings/buildings-view.html",
             data: {
-                pageTitle: 'Buttons'
+                pageTitle: 'Здания'
             }
         })
-        .state('ui.sliders-progress', {
-            url: "/sliders-progress",
-            templateUrl: "views/ui-sliders-progress.html",
+        .state('owners', {
+            url: "/owners",
+            templateUrl: "views/owners/owners-view.html",
             data: {
-                pageTitle: 'Sliders and Progress'
+                pageTitle: 'Собственники'
             }
         })
-        .state('ui.modals-popups', {
-            url: "/modals-popups",
-            templateUrl: "views/ui-modals-popups.html",
+        .state('tenants', {
+            url: "/tenants",
+            templateUrl: "views/tenants/tenants-view.html",
             data: {
-                pageTitle: 'Modals and Popups'
+                pageTitle: 'Арендаторы'
             }
         })
         .state('ui.tabs-accordions', {

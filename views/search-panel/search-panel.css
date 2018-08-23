@@ -1,0 +1,132 @@
+.search-panel-2 div {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.search-panel-2 p {
+  margin: 0;
+}
+.search-panel-2 div button {
+  position: absolute;
+  right: 15px;
+}
+  .digits {
+    margin-top: 15px;
+  }
+  .alphabet-rus > button, 
+  .alphabet-eng > button, 
+  .digits > button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 5px 5px 0 !important;
+    border-radius: 3px !important;
+    height: 30px;
+    width: 30px;
+  }
+  .alphabet-rus > button span, 
+  .alphabet-eng > button span, 
+  .digits > button span {
+    position: absolute;
+  }
+  .flex-block {
+    display: flex;
+  }
+  .search-block-input {
+    display: flex;
+    margin: 0 15px 0 0!important;
+  }
+  .search-block-input label {
+    text-align: left !important;
+  }
+  .search-panel-1 .radio label {
+    padding-left: 0 !important;
+  }
+  .search-panel-1 .radio span {
+    margin-left: 4px;
+  }
+  .search-panel-1 .radio:last-child {
+    margin-top: 20px;
+  }
+  .checkbox label {
+      padding: 0;
+  }
+  .search-block-input .label-1 {
+    margin-right: 15px;
+  }
+  .search-block-input .label-2 {
+    margin-right: 24px;
+  }
+  .search-block-inline-input {
+    display: flex;
+    margin-bottom: 15px;
+  }
+  .search-block-inline-input > div {
+    display: flex;
+    align-items: baseline;
+  }
+  .radio-checkbox-panel {
+    padding: 15px 0;
+    margin-top: 15px;
+  }
+  .form-group {
+      margin: 0 15px;
+  }
+  .col-sm-6 span {
+    margin-left: 5px;
+  }
+  .col-sm-6 .icheckbox_flat-grey {
+      margin-top: -4px;
+  }
+  .inline-inputs {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    width: 500px;
+    padding-right: 15px;
+  }
+  .inline-inputs label {
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 80px;
+    text-align: right;
+    padding-top: 0 !important;
+  }
+  .inline-inputs-block {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .search-options {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 15px;
+  }
+  .search-options > div {
+    width: 150px;
+  }
+  .search-options > div:last-child {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    width: 400px;
+  }
+  .search-options > div:last-child .checkbox-inline {
+    display: flex;
+    align-items: center;
+    margin-left: 0px;
+    margin-right: 5px;
+  }
+  .search-panel-1 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 15px;
+  }
+  .compass {
+    width: 165px;
+    height: 160px;
+    position: relative;
+    margin: 0 35px;
+  }
+  .compass > div {
+    position: absolute;
+  }

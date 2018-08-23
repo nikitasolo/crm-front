@@ -6,6 +6,32 @@ app.controller('MainCtrl', function($scope) {
     };
 });
 
+app.controller('drawCompassCtrl', function($scope) {
+    /*
+        drawCircle()
+        selector : селектор jQuery, который определяет элемент или массив элементов
+        center : центр окружности
+        radius : радиус окружности
+        angle: угол внутри окружности
+        x: смещение влево всех точек окружности
+        y: смещение по вертикали всех точек окружности
+
+    */
+    $scope.drawCircle = function(selector, center, radius, angle, x, y) {
+        var total = $(selector).length;
+        var alpha = Math.PI * 2 / total;
+        $(selector).each(function(index) {
+            var theta = alpha * index;
+            var pointx  =  Math.floor(Math.cos( theta ) * radius);
+            var pointy  = Math.floor(Math.sin( theta ) * radius );
+            // Выводим координаты X и Y
+            $(this).css('margin-left', pointx + x + 'px');
+            $(this).css('margin-top', pointy  + y  + 'px');
+        });
+    }
+    $scope.drawCircle('.compass-item', 50, 70, 90, 60, 60);
+});
+
 app.controller('authorizationCtrl', function($scope, $http) {
     // Список юзеров для тестирования
     $http.get('users.json').success(function (data) {        
