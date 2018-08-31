@@ -1,0 +1,34 @@
+.container > div {
+    display: flex;
+    margin-bottom: 10px;
+}
+.company-type select {
+    width: 50%;
+}
+.company-type label {
+    width: 135px;
+    margin-right: 13px;
+}
+.call-period {
+    width: 300px;
+}
+.call-period input {
+    width: 20%;
+}
+.call-period label {
+    margin: 0 15px;
+}
+.call-period span {
+    align-self: center;
+    margin: 0 15px;
+}
+.company-status select {
+    margin: 0 15px;
+}
+.site input {
+    margin: 0 15px;
+}
+.create-task {
+    margin-top: 5px;
+    margin-bottom: 15px;
+}

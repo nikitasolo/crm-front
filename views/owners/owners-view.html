@@ -17,48 +17,7 @@
 <section id="main-content" class="animated fadeInRight">
     <div class="row">
         <div class="col-md-12 col-lg-12">
-            <form class="form-horizontal form-border">
-                <div class="form-group inline-inputs-block">
-                    <div class="inline-inputs">
-                        <label class="control-label">Название:</label>
-                        <input type="text" class="form-control">
-                    </div>
-                    <div class="inline-inputs">
-                        <label class="control-label">Фамилия:</label>
-                        <input type="text" class="form-control">
-                    </div>
-                    <div class="inline-inputs">
-                        <label class="control-label">Адрес:</label>
-                        <input type="text" class="form-control">
-                    </div>
-                    <div class="inline-inputs">
-                        <label class="control-label">Имя:</label>
-                        <input type="text" class="form-control">
-                    </div>
-                    <div class="inline-inputs">
-                        <label class="control-label">Метро:</label>
-                        <input type="text" class="form-control">
-                    </div>
-                    <div class="inline-inputs">
-                        <label class="control-label">Отчество:</label>
-                        <input type="text" class="form-control">
-                    </div>
-                    <div class="inline-inputs">
-                        <label class="control-label">Email:</label>
-                        <input type="text" class="form-control">
-                    </div>
-                    <div class="inline-inputs">
-                        <label class="control-label">Телефон:</label>
-                        <input type="text" class="form-control">
-                    </div>
-                </div>
-                <!-- <label class="control-label label-1">Метраж:</label>
-                <div>
-                    <input type="text" class="form-control">
-                    &#8212;
-                    <input type="text" class="form-control">
-                </div> -->
-            </form>
+            <div ng-include="'views/search-panel/search-panel-names.html'"></div>
             <div class="row">
                 <div class="col-md-12 col-lg-12">
                     <div ng-include="'views/search-panel/search-digits-alphabet.html'"></div>

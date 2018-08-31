@@ -1,0 +1,51 @@
+.container {
+    margin: 15px 15px 0 15px;
+    padding: 0;
+    flex-wrap: wrap;
+}
+.footage {
+    display: flex;
+    margin-right: 50px;
+}
+.footage label {
+    margin-right: 23px;
+}
+.number-of-clients {
+    display: flex;
+}
+.number-of-clients input,
+.footage input {
+    width: 100px;
+    margin-left: 15px;
+}
+.number-of-clients select,
+.footage select {
+    width: 60px;
+    margin-left: 15px;
+}
+.client-id {
+    justify-content: flex-start;
+}
+.client-id input {
+    width: 30%;
+    margin-left: 15px;
+}
+.to-archive-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+.search-options .type-search {
+    width: 210px;
+}
+.search-options .type-search .control-label {
+    font-weight: 700;
+}
+.search-options .type-search .radio span {
+    margin-left: 4px;
+}
+.last-date {
+    position: absolute;
+    bottom: 30px;
+    right: 15px;
+}

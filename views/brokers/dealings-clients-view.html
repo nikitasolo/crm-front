@@ -1,0 +1,138 @@
+<head>
+    <link href="views/brokers/dealings-clients.css" rel="stylesheet">
+</head>
+<div class="pageheader">
+    <h1>Сделки и клиенты</h1>
+    <!-- <div class="breadcrumb-wrapper hidden-xs">
+        <span class="label">You are here:</span>
+        <ol class="breadcrumb">
+            <li><a href="#/index">Dashboard</a>
+            </li>
+            <li>UI Elements</li>
+            <li class="active">Buttons</li>
+        </ol>
+    </div> -->
+</div>
+<section id="main-content" class="animated fadeInRight">
+    <div class="row">
+        <div class="col-md-12 col-lg-12">
+            <div class="row">
+                <div class="panel panel-default broker-name">
+                    <div class="panel-body">
+                        <div class="form-group inline-inputs-block">
+                            <div class="inline-inputs">
+                                <input type="text" class="form-control" value="Иванов Иван Иванович">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">                
+                    <div class="panel panel-default table-panel">
+                        <div class="panel-body">
+                            <accordion close-others="oneAtATime">
+                                <accordion-group heading="Сделки" is-open="true" is-disabled="status.isFirstDisabled">
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered table-striped">
+                                        <thead>
+                                            <tr>
+                                            <th>#</th>
+                                            <th>Первый звонок</th>
+                                            <th>Компания</th>
+                                            <th>Метро</th>
+                                            <th>Брокер</th>
+                                            <th>Адрес</th>
+                                            <th>м&#178;</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                            <td>1</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            </tr>
+                                            <tr>
+                                            <td>2</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            </tr>
+                                            <tr>
+                                            <td>3</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            </tr>
+                                        </tbody>
+                                        </table>
+                                    </div>
+                                </accordion-group>
+                                <accordion-group heading="{{ group.title }}" ng-repeat="group in groups">
+                                    {{ group.content }}
+                                </accordion-group>
+                                <accordion-group heading="Клиенты" is-open="true">
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered table-striped">
+                                        <thead>
+                                            <tr>
+                                            <th>#</th>
+                                            <th>Первый звонок</th>
+                                            <th>Компания</th>
+                                            <th>Метро</th>
+                                            <th>Брокер</th>
+                                            <th>Адрес</th>
+                                            <th>м&#178;</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                            <td>1</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            </tr>
+                                            <tr>
+                                            <td>2</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            </tr>
+                                            <tr>
+                                            <td>3</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            </tr>
+                                        </tbody>
+                                        </table>
+                                    </div>
+                                </accordion-group>                                
+                            </accordion>            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+

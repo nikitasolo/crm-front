@@ -36,18 +36,18 @@ function config($stateProvider, $urlRouterProvider) {
                 pageTitle: 'Арендаторы'
             }
         })
-        .state('ui.tabs-accordions', {
-            url: "/tabs-accordions",
-            templateUrl: "views/ui-tabs-accordions.html",
+        .state('search-results', {
+            url: "/search-results",
+            templateUrl: "views/search-results/search-results-view.html",
             data: {
-                pageTitle: 'Tabs and Accordions'
+                pageTitle: 'Результаты поиска'
             }
         })
-        .state('ui.alerts-notifications', {
-            url: "/alerts-notifications",
-            templateUrl: "views/ui-alerts-notifications.html",
+        .state('estate-objects', {
+            url: "/estate-objects",
+            templateUrl: "views/estate-objects/estate-objects-view.html",
             data: {
-                pageTitle: 'Alerts and Notifications'
+                pageTitle: 'Подборка объектов недвижимости'
             }
         })
         .state('ui.nestable-lists', {
@@ -78,23 +78,23 @@ function config($stateProvider, $urlRouterProvider) {
                 pageTitle: 'Typography'
             }
         })
-        .state('forms', {
+        .state('company', {
             abstract: true,
-            url: "/forms",
+            url: "/company",
             templateUrl: "views/common.html",
         })
-        .state('forms.components', {
-            url: "/components",
-            templateUrl: "views/forms-components.html",
+        .state('company.company-blank', {
+            url: "/company-blank",
+            templateUrl: "views/company/company-blank-view.html",
             data: {
-                pageTitle: 'Components'
+                pageTitle: 'Бланк компании'
             }
         })
-        .state('forms.validation', {
-            url: "/validation",
-            templateUrl: "views/forms-validation.html",
+        .state('company.add-edit-contact', {
+            url: "/add-edit-contact",
+            templateUrl: "views/company/add-edit-contact-view.html",
             data: {
-                pageTitle: 'Validation'
+                pageTitle: 'Добавлени и редактирование контакта'
             }
         })
         .state('forms.mask', {
@@ -147,56 +147,23 @@ function config($stateProvider, $urlRouterProvider) {
                 pageTitle: 'WYSIWYG Editors'
             }
         })
-        .state('tables', {
+        .state('brokers', {
             abstract: true,
-            url: "/tables",
+            url: "/brokers",
             templateUrl: "views/common.html",
         })
-        .state('tables.basic', {
-            url: "/basic",
-            templateUrl: "views/tables-basic.html",
+        .state('brokers.dealings-clients', {
+            url: "/dealings-clients",
+            templateUrl: "views/brokers/dealings-clients-view.html",
             data: {
-                pageTitle: 'Basic Table'
+                pageTitle: 'Сделки и клиенты'
             }
         })
-        .state('tables.data', {
-            url: "/data",
-            templateUrl: "views/tables-data.html",
+        .state('brokers.list-of-brokers', {
+            url: "/list-of-brokers",
+            templateUrl: "views/brokers/list-of-brokers-view.html",
             data: {
-                pageTitle: 'Data Tables'
-            }
-        })
-        .state('charts', {
-            abstract: true,
-            url: "/charts",
-            templateUrl: "views/common.html",
-        })
-        .state('charts.chartjs', {
-            url: "/chartjs",
-            templateUrl: "views/charts-chartjs.html",
-            data: {
-                pageTitle: 'Chart.js'
-            }
-        })
-        .state('charts.c3', {
-            url: "/c3",
-            templateUrl: "views/charts-c3.html",
-            data: {
-                pageTitle: 'C3 Charts'
-            }
-        })
-        .state('charts.morris', {
-            url: "/morris",
-            templateUrl: "views/charts-morris.html",
-            data: {
-                pageTitle: 'Morris.js Charts'
-            }
-        })
-        .state('charts.sparkline', {
-            url: "/sparkline",
-            templateUrl: "views/charts-sparkline.html",
-            data: {
-                pageTitle: 'Sparkline Charts'
+                pageTitle: 'Список брокеров'
             }
         })
         .state('mail', {

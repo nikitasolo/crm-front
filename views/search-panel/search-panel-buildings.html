@@ -28,45 +28,45 @@
                             </div>
                             <div>                                  
                                 <div class="radio">
-                                    <label><input ichecks class="icheck" type="radio" name="rad1"><span>Аренда</span></label>
+                                    <label><input ichecks class="icheck" type="radio"><span>Аренда</span></label>
                                 </div> 
                                 <div class="radio">
-                                    <label><input ichecks class="icheck" type="radio" name="rad1"><span>Продажа</span></label>
+                                    <label><input ichecks class="icheck" type="radio"><span>Продажа</span></label>
                                 </div>
                             </div>
                             <div class="flex-block">
                                 <div class="checkbox compass">
                                     <div class="compass-item">
                                         <label><input ichecks class="icheck" type="checkbox">
-                                        В</label>
+                                        <span>В</span></label>
                                     </div>
                                     <div class="compass-item">
                                         <label><input ichecks class="icheck" type="checkbox">
-                                        ЮВ</label>
+                                        <span>ЮВ</span></label>
                                     </div>
                                     <div class="compass-item">
                                         <label><input ichecks class="icheck" type="checkbox">
-                                        Ю</label>
+                                        <span>Ю</span></label>
                                     </div>
                                     <div class="compass-item">
                                         <label><input ichecks class="icheck" type="checkbox">
-                                        ЮЗ</label>
+                                        <span>ЮЗ</span></label>
                                     </div>
                                     <div class="compass-item">
                                         <label><input ichecks class="icheck" type="checkbox">
-                                        З</label>
+                                        <span>З</span></label>
                                     </div>
                                     <div class="compass-item">
                                         <label> <input ichecks class="icheck" type="checkbox">
-                                        СЗ</label>
+                                        <span>СЗ</span></label>
                                     </div>
                                     <div class="compass-item">
                                         <label><input ichecks class="icheck" type="checkbox">
-                                        С</label>
+                                        <span>С</span></label>
                                     </div>
                                     <div class="compass-item">
                                         <label><input ichecks class="icheck" type="checkbox">
-                                        СВ</label>
+                                        <span>СВ</span></label>
                                     </div>
                                 </div>
                                 <div class="checkbox">
@@ -93,6 +93,8 @@
                                 </div>
                             </div>
                         </div>
+                        
+                        <button class="btn btn-primary to-archive-btn" type="button" ng-if="$state.current.name == 'estate-objects'">В архив</button>
                         <hr>
                         <div class="checkbox search-options">
                             <div>
@@ -183,6 +185,18 @@
                                     кабинетная</label>
                                 </div>
                             </div> 
+                            <div ng-if="$state.current.name == 'estate-objects'" class="type-search">
+                                <label class="control-label">Тип поиска:</label>
+                                <div class="radio">
+                                    <label><input ichecks class="icheck" type="radio"><span>По метро</span></label>
+                                </div> 
+                                <div class="radio">
+                                    <label><input ichecks class="icheck" type="radio"><span>По расстоянию</span></label>
+                                </div>
+                                <div class="radio">
+                                    <label><input ichecks class="icheck" type="radio"><span>Только по расстоянию</span></label>
+                                </div>
+                            </div>
                             <div>
                                 <label class="checkbox-inline">
                                     <input ichecks class="icheck" type="checkbox"><span>ОСЗ</span></label>
@@ -198,8 +212,14 @@
                                     <input ichecks class="icheck" type="checkbox"><span>C</span></label>
                                 <label class="checkbox-inline">
                                     <input ichecks class="icheck" type="checkbox"><span>D</span></label>
-                            </div>                    
-                        </div>         
+                            </div>               
+                        </div>                             
+                        <div class="last-date" ng-if="$state.current.name == 'estate-objects'">                                
+                            <div class="inline-inputs">
+                                    <label class="control-label">Дата последнего дейстивия:</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>           
                     </form>              
                 </div>
             </div>

@@ -49,7 +49,7 @@
 </head>
 <!-- Current state name -->
 
-<body class="{{$state.current.name}}">
+<body class="{{ $state.current.name }}">
     <div ng-if="!user.logged" ng-include="'views/sign-in.html'"></div>
     <!-- Page Wrapper-->
     <section id="main-wrapper" class="theme-dark-blue-full" ng-if="user.logged">

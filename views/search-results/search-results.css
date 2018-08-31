@@ -1,0 +1,15 @@
+.panel-group {
+    margin-bottom: 0;
+}
+.table-responsive {
+    display: flex;
+    flex-direction: column;
+}
+.table-responsive button {
+    margin-bottom: 15px;
+    align-self: flex-end;
+}
+.search-btn {
+    height: 50px;
+    margin-top: 15px;
+}

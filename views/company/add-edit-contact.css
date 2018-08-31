@@ -1,0 +1,25 @@
+.flex-block {
+    display: flex;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+.inline-inputs {
+    display: flex;
+    align-items: center;
+}
+.inline-inputs input {
+    margin: 0 15px;
+}
+.table-panel {
+    display: flex;
+    flex-direction: column;
+}
+.btn-block-flex {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+.panel-heading {
+    display: flex;
+    justify-content: space-between;
+}

@@ -29,7 +29,7 @@ app.controller('drawCompassCtrl', function($scope) {
             $(this).css('margin-top', pointy  + y  + 'px');
         });
     }
-    $scope.drawCircle('.compass-item', 50, 70, 90, 60, 60);
+    $scope.drawCircle('.compass-item', 50, 55, 0, 60, 55);
 });
 
 app.controller('authorizationCtrl', function($scope, $http) {

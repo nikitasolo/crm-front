@@ -26,7 +26,7 @@
     <!-- location directive.js | data-nav-toggle-sub maps to -->
     <ul class="nav nav-pills nav-stacked" data-nav-toggle-sub>
         <li ui-sref-active="active">
-            <a href="javascript:;" ui-sref="buildings" title="Здания">Здания
+            <a href="javascript:;" ui-sref="buildings" title="Здания">Список зданий
            </a>
         </li>
         <li ui-sref-active="active">
@@ -38,24 +38,24 @@
            </a>
         </li>
         <li ui-sref-active="active">
-            <a href="javascript:;" ui-sref="searching-results" title="Результаты поиска">Результаты поиска
+            <a href="javascript:;" ui-sref="search-results" title="Результаты поиска">Результаты поиска
            </a>
         </li>
         <li class="nav-dropdown" ng-class="{active: $state.includes('forms')}">
             <a href="" title="Компании">
                 <i class="fa fa-fw fa-chevron-right"></i>Компании
             </a>
-            <ul class="nav-sub" ng-class="{in: $state.includes('forms')}">
+            <ul class="nav-sub" ng-class="{in: $state.includes('company')}">
                 <li ui-sref-active="active">
-                    <a href="" ui-sref="forms.company-blank" title="Бланк компании">Бланк компании
+                    <a href="" ui-sref="company.company-blank" title="Бланк компании">Бланк компании
                    </a>
                 </li>
                 <li ui-sref-active="active">
-                    <a href="" ui-sref="forms.add-edit-contact" title="Форма редактирования и добавления контакта">Форма редактирования и добавления контакта
+                    <a href="" ui-sref="company.add-edit-contact" title="Форма редактирования и добавления контакта">Форма редактирования и добавления контакта
                    </a>
                 </li>
                 <li ui-sref-active="active">
-                    <a href="javascript:;" ui-sref="forms.task" title="Форма задачи">Форма задачи
+                    <a href="javascript:;" ui-sref="company.task" title="Форма задачи">Форма задачи
                    </a>
                 </li>
             </ul>
@@ -64,7 +64,7 @@
             <a href="" title="Здания">
                 <i class="fa fa-fw fa-chevron-right"></i>Здания
             </a>
-            <ul class="nav-sub" ng-class="{in: $state.includes('ui')}">
+            <ul class="nav-sub">
                 <li ui-sref-active="active">
                     <a href="" ui-sref="forms.building-blank" title="Бланк здания">Бланк здания
                    </a>
@@ -83,13 +83,13 @@
             <a href="" title="Брокеры">
                 <i class="fa fa-fw fa-chevron-right"></i>Брокеры
             </a>
-            <ul class="nav-sub" ng-class="{active: $state.includes('dealings-clients')}">
+            <ul class="nav-sub" ng-class="{active: $state.includes('brokers')}">
                 <li ui-sref-active="active">
-                    <a href="" ui-sref="list-of-brokers" title="Список брокеров">Список брокеров
+                    <a href="" ui-sref="brokers.list-of-brokers" title="Список брокеров">Список брокеров
                    </a>
                 </li>
                 <li ui-sref-active="active">
-                    <a href="" ui-sref="dealings-clients" title="Сделки и клиенты">Сделки и клиенты
+                    <a href="" ui-sref="brokers.dealings-clients" title="Сделки и клиенты">Сделки и клиенты
                    </a>
                 </li>
             </ul>

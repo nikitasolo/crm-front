@@ -1,0 +1,122 @@
+<head>
+    <link href="views/buildings/buildings.css" rel="stylesheet">
+    <link href="views/search-panel/search-panel.css" rel="stylesheet">
+    <link href="views/estate-objects/estate-objects.css" rel="stylesheet">
+</head>
+<div class="pageheader">
+    <h1>Подборка объектов недвижимости</h1>
+    <!-- <div class="breadcrumb-wrapper hidden-xs">
+        <span class="label">You are here:</span>
+        <ol class="breadcrumb">
+            <li><a href="#/index">Dashboard</a>
+            </li>
+            <li>UI Elements</li>
+            <li class="active">Buttons</li>
+        </ol>
+    </div> -->
+</div>
+<section id="main-content" class="animated fadeInRight">
+<div class="row">
+    <div class="col-md-12 col-lg-12">
+        <form class="form-horizontal form-border">
+            <div class="form-group inline-inputs-block">
+                <div class="inline-inputs company">
+                    <label class="control-label">Название:</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="inline-inputs client-id">
+                    <label class="control-label">ИД клиента:</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="flex-block container">
+                    <div class="footage">
+                        <label class="control-label">Метраж</label>
+                        <select class="form-control">
+                            <option value="">&gt;</option>
+                            <option value="">&lt;</option>
+                            <option value="">&#61;</option>
+                        </select>                
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="number-of-clients">
+                        <label class="control-label">Количество сотрудников</label>
+                        <select class="form-control">
+                            <option value="">&gt;</option>
+                            <option value="">&lt;</option>
+                            <option value="">&#61;</option>
+                        </select>                
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div ng-include="'views/search-panel/search-digits-alphabet.html'"></div>
+        <div ng-include="'views/search-panel/search-panel-buildings.html'"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-default search-panel-2">
+                    <div class="panel-body">
+                        <p>Найдено зданий: 65</p>
+                        <button class="btn btn-primary" type="button">Поиск</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">                
+                <div class="panel panel-default table-panel">
+                    <div class="panel-body">
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                <th>#</th>
+                                <th>Организация</th>
+                                <th>БЦ</th>
+                                <th>Метро</th>
+                                <th>Кл</th>
+                                <th>м&#178;</th>
+                                <th>Ставка</th>
+                                <th>Состояние</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                <td>1</td>
+                                <td>Table cell</td>
+                                <td>Table cell</td>
+                                <td>Table cell</td>
+                                <td>Table cell</td>
+                                <td>Table cell</td>
+                                <td>Table cell</td>
+                                <td>Table cell</td>
+                                </tr>
+                                <tr>
+                                <td>2</td>
+                                <td>Table cell</td>
+                                <td>Table cell</td>
+                                <td>Table cell</td>
+                                <td>Table cell</td>
+                                <td>Table cell</td>
+                                <td>Table cell</td>
+                                <td>Table cell</td>
+                                </tr>
+                                <tr>
+                                <td>3</td>
+                                <td>Table cell</td>
+                                <td>Table cell</td>
+                                <td>Table cell</td>
+                                <td>Table cell</td>
+                                <td>Table cell</td>
+                                <td>Table cell</td>
+                                <td>Table cell</td>
+                                </tr>
+                            </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

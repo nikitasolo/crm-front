@@ -1,0 +1,350 @@
+<head>
+    <link href="views/buildings/buildings.css" rel="stylesheet">
+    <link href="views/search-panel/search-panel.css" rel="stylesheet">
+    <link href="views/company/company.css" rel="stylesheet">
+    <link href="views/estate-objects/estate-objects.css" rel="stylesheet">    
+    <link href="views/search-results/search-results.css" rel="stylesheet">
+</head>
+<div class="pageheader">
+    <h1>Бланк компании</h1>
+    <!-- <div class="breadcrumb-wrapper hidden-xs">
+        <span class="label">You are here:</span>
+        <ol class="breadcrumb">
+            <li><a href="#/index">Dashboard</a>
+            </li>
+            <li>UI Elements</li>
+            <li class="active">Buttons</li>
+        </ol>
+    </div> -->
+</div>
+<section id="main-content" class="animated fadeInRight">
+<div class="row">
+    <div class="col-md-12 col-lg-12">
+        <form class="form-horizontal form-border">
+            <div class="form-group inline-inputs-block">
+                <div class="inline-inputs company">
+                    <label class="control-label">Название:</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="inline-inputs client-id">
+                    <label class="control-label">ID:</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="flex-block container">
+                    <div class="footage">
+                        <label class="control-label">Метраж</label>
+                        <select class="form-control">
+                            <option value="">&gt;</option>
+                            <option value="">&lt;</option>
+                            <option value="">&#61;</option>
+                        </select>                
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="number-of-clients">
+                        <label class="control-label">Количество сотрудников</label>
+                        <select class="form-control">
+                            <option value="">&gt;</option>
+                            <option value="">&lt;</option>
+                            <option value="">&#61;</option>
+                        </select>                
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="company-type">
+                        <label class="control-label">Тип компании:</label>
+                        <select class="form-control">
+                            <option value="">Арендатор</option>
+                            <option value="">Тип 2</option>
+                            <option value="">Тип 3</option>
+                        </select>
+                    </div>
+                    <div class="last-date">
+                        <label class="control-label">Дата последнего звонка:</label>            
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="call-period">
+                        <label class="control-label">Период обзвона:</label>            
+                        <input type="text" class="form-control"><span>дней</span>
+                    </div>
+                    <div class="company-status">
+                        <label class="control-label">Статус:</label>
+                        <select class="form-control">
+                            <option value="">Не закреплена</option>
+                            <option value="">Тип 2</option>
+                            <option value="">Тип 3</option>
+                        </select> 
+                    </div>
+                    <div class="site">
+                        <label class="control-label">Сайт:</label>            
+                        <input type="text" class="form-control" value="example.com">
+                    </div>
+                </div>
+            </div>            
+            <button class="btn btn-primary create-task" type="button">Создать задачу</button>
+        </form>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Описание вида деятельности компании</h3>
+                    </div>
+                    <div class="panel-body">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde in qui accusamus at, deleniti nihil voluptatem quisquam assumenda illo expedita, blanditiis id! Quos totam consectetur eligendi reiciendis delectus quisquam eum.
+                        Expedita aliquam iure, minima repellendus eaque aliquid hic perspiciatis eum, ex cum saepe modi ipsam doloribus exercitationem neque aut corporis, tempore soluta libero deserunt fugiat doloremque dolores? Tenetur, incidunt animi?
+                        Rem omnis fuga illum ullam ipsam cum maxime ipsa a necessitatibus numquam vel reiciendis at, officia ratione perspiciatis temporibus animi reprehenderit, earum debitis excepturi assumenda suscipit eos nostrum inventore. Exercitationem.
+                        Libero vero consequuntur fugit aliquam corporis sequi dolorem aut, ea ad perferendis atque veritatis, possimus porro voluptatem commodi dicta. Eum rem aliquam tenetur fugiat veritatis dolor illum nam! Culpa, neque.
+                        Odit ipsum consequuntur qui nisi laudantium officia? Culpa tenetur provident reiciendis mollitia perferendis ut enim ipsa magni autem, modi voluptas repellendus sequi cum dolores unde nisi ratione aperiam suscipit alias!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+            <div class="col-md-12">                
+                <div class="panel panel-default table-panel">
+                    <div class="panel-body">
+                        <accordion close-others="oneAtATime">
+                            <accordion-group heading="Комментарии" is-open="true" is-disabled="status.isFirstDisabled">
+                                <div class="table-responsive">
+                                    <button class="btn btn-primary" type="button">Добавить комментарий</button>
+                                    <table class="table table-bordered table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Сотрудник</th>
+                                            <th>Дата</th>
+                                            <th>Комментарий</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                        </tr>
+                                    </tbody>
+                                    </table>
+                                </div>
+                            </accordion-group>
+                            <accordion-group heading="{{ group.title }}" ng-repeat="group in groups">
+                                {{ group.content }}
+                            </accordion-group>
+                            <accordion-group heading="Контакты" is-open="true">
+                                <div class="table-responsive">
+                                    <button class="btn btn-primary" type="button">Добавить контакт</button>
+                                    <table class="table table-bordered table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>ФИО</th>
+                                            <th>Телефон</th>
+                                            <th>Почта</th>
+                                            <th>Статус</th>
+                                            <th>Редактирование</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td><i class="fa fa-fw fa-edit"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td><i class="fa fa-fw fa-edit"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td><i class="fa fa-fw fa-edit"></i></td>
+                                        </tr>
+                                    </tbody>
+                                    </table>
+                                </div>
+                            </accordion-group>
+                            <accordion-group heading="Арендатор" is-open="true">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Собственник</th>
+                                            <th>Адрес</th>
+                                            <th>Объект недвижимости</th>
+                                            <th>Этаж (-и)</th>
+                                            <th>м&#178;</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                        </tr>
+                                    </tbody>
+                                    </table>
+                                </div>
+                            </accordion-group>
+                            <accordion-group heading="Собственник" is-open="true">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Адрес</th>
+                                            <th>Объект недвижимости</th>
+                                            <th>Этаж (-и)</th>
+                                            <th>м&#178;</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                        </tr>
+                                    </tbody>
+                                    </table>
+                                </div>
+                            </accordion-group>
+                            <accordion-group heading="Сделки" is-open="true">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Название</th>
+                                            <th>Район</th>
+                                            <th>Метраж</th>
+                                            <th>Статус</th>
+                                            <th>Последние действия</th>
+                                            <th>Дата последнего действия</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                        </tr>
+                                    </tbody>
+                                    </table>
+                                </div>
+                            </accordion-group>
+                            <accordion-group heading="Брокеры" is-open="true">
+                                <div class="table-responsive">
+                                    <button class="btn btn-primary" type="button">Добавить брокера</button>
+                                    <table class="table table-bordered table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>ФИО</th>
+                                            <th>Удалить</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Table cell</td>
+                                            <td><i class="fa fa-fw fa-trash-o"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Table cell</td>
+                                            <td><i class="fa fa-fw fa-trash-o"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Table cell</td>
+                                            <td><i class="fa fa-fw fa-trash-o"></i></td>
+                                        </tr>
+                                    </tbody>
+                                    </table>
+                                </div>
+                            </accordion-group>
+                        </accordion>            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

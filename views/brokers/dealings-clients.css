@@ -1,0 +1,9 @@
+.broker-name {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.inline-inputs-block, 
+.panel-group, 
+.table {
+    margin-bottom: 0;
+}
